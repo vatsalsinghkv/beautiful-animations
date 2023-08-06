@@ -1,0 +1,68 @@
+.bg-float {
+  text-align: center;
+  &__square {
+    position: absolute;
+    bottom: -75px;
+    background-color: var(--color-grey-2);
+    height: 50px;
+    width: 50px;
+
+    &:nth-child(n) {
+      height: 60px;
+      width: 60px;
+    }
+
+    &:nth-child(2n) {
+      height: 45px;
+      width: 45px;
+    }
+
+    @for $i from 1 through 10 {
+      &:nth-child(#{$i}) {
+        left: $i * 8.5%;
+        animation: boxes 5s infinite ease-in-out;
+        animation-delay: ($i - 1) * 1.5s;
+
+        @if $i == 3 {
+          left: 15%;
+          height: 70px;
+          width: 70px;
+          animation-delay: 8s;
+        }
+
+        @if $i == 4 {
+          left: 10%;
+          height: 55px;
+          width: 55px;
+          animation-delay: 2s;
+        }
+
+        @if $i == 4 {
+          left: 60%;
+          height: 35px;
+          width: 35px;
+          animation-delay: 2s;
+        }
+
+        @if $i == 9 {
+          left: 85%;
+          height: 75px;
+          width: 75px;
+          animation-delay: 2s;
+        }
+      }
+    }
+  }
+}
+
+@keyframes boxes {
+  0% {
+    bottom: -75px;
+  }
+
+  100% {
+    bottom: 100%;
+    transform: rotate(180deg);
+    opacity: 0;
+  }
+}
