@@ -1,0 +1,49 @@
+.loader-swing-ball {
+  &__line {
+    width: 250px;
+    border-bottom: 3px solid var(--color-text);
+    position: relative;
+    animation: swing 2s linear infinite;
+  }
+
+  &__ball {
+    position: absolute;
+    left: 0;
+    background-color: var(--color-text);
+    transform-origin: center;
+    animation: roll 2s linear infinite;
+  }
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(30deg);
+  }
+
+  // ? 100%
+  50% {
+    transform: rotate(-30deg);
+  }
+
+  // ? Reset (to complete one oscillation | cycle)
+  100% {
+    transform: rotate(30deg);
+  }
+}
+
+@keyframes roll {
+  0% {
+    left: 0;
+  }
+
+  // ? 100%
+  50% {
+    left: 100%;
+    transform: translateX(-100%) rotate(360deg);
+  }
+
+  // ? Reset (to complete one oscillation | cycle)
+  100% {
+    left: 0;
+  }
+}
