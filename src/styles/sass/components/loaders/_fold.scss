@@ -1,0 +1,25 @@
+.loader-fold {
+  width: 75px;
+  height: 75px;
+  background-color: var(--color-text);
+  border-radius: 15%;
+  animation: fold 2s linear infinite;
+
+  &__container {
+    perspective: 200px;
+  }
+}
+
+@keyframes fold {
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  50% {
+    transform: rotateY(180deg);
+  }
+
+  100% {
+    transform: rotateZ(180deg);
+  }
+}
