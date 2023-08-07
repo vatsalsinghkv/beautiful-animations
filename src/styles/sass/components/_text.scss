@@ -1,4 +1,4 @@
-.word-change {
+.text-change {
   &__title::before {
     content: 'Batman';
     text-transform: uppercase;
@@ -18,5 +18,35 @@
 
   100% {
     content: 'Tyler Durden';
+  }
+}
+
+.text-lighting {
+  color: #636363;
+  text-transform: uppercase !important;
+  font-weight: 500;
+
+  &__letter {
+    @for $i from 1 through 10 {
+      &:nth-child(#{$i}) {
+        animation: lighting 1.4s linear infinite;
+        animation-delay: ($i - 1) * 0.1s;
+      }
+    }
+  }
+}
+
+@keyframes lighting {
+  0% {
+    color: #636363;
+    text-shadow: none;
+  }
+  90% {
+    color: #636363;
+    text-shadow: none;
+  }
+  100% {
+    color: #fff900;
+    text-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
   }
 }
