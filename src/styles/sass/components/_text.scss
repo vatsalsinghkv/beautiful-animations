@@ -1,0 +1,22 @@
+.word-change {
+  &__title::before {
+    content: 'Batman';
+    text-transform: uppercase;
+    color: var(--color-blue);
+    animation: word-switch 5s linear infinite;
+  }
+}
+
+@keyframes word-switch {
+  0% {
+    content: 'Batman';
+  }
+
+  50% {
+    content: 'Ryan Gosling';
+  }
+
+  100% {
+    content: 'Tyler Durden';
+  }
+}
