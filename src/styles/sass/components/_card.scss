@@ -11,4 +11,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+    margin: 0 auto;
+    width: 95%;
+    text-transform: capitalize;
+  }
 }

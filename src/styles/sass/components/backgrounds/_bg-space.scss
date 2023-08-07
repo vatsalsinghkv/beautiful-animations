@@ -1,0 +1,20 @@
+.bg-space {
+  background: url('/images/space-2.jpeg');
+  background-size: cover;
+  background-position-y: 0;
+  animation: scroll 60s linear infinite;
+
+  &__text {
+    color: var(--color-light);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    background-position-y: 0;
+  }
+
+  100% {
+    background-position-y: 6000px;
+  }
+}
