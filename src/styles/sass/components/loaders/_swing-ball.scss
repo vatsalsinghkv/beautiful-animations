@@ -9,6 +9,7 @@
   &__ball {
     position: absolute;
     left: 0;
+    bottom: 0;
     background-color: var(--color-text);
     transform-origin: center;
     animation: roll 2s linear infinite;
