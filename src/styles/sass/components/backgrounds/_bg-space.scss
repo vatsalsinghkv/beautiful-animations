@@ -3,10 +3,6 @@
   background-size: cover;
   background-position-y: 0;
   animation: scroll 60s linear infinite;
-
-  &__text {
-    color: var(--color-light);
-  }
 }
 
 @keyframes scroll {

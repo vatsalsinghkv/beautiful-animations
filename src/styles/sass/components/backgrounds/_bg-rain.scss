@@ -1,0 +1,23 @@
+.bg-rain {
+  background-image: url('/images/bg-1.jpeg');
+  background-size: cover;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('/images/rain.png');
+    background-size: cover;
+    animation: rain 1s linear infinite;
+  }
+}
+
+@keyframes rain {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 200px 500px;
+  }
+}
