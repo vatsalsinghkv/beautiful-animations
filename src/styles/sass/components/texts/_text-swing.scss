@@ -1,4 +1,4 @@
-.loader-swing {
+.text-swing {
   &__text {
     width: 95%;
     margin: 0 auto;
@@ -10,7 +10,7 @@
     letter-spacing: 5px;
     text-shadow: 0 1px 0 var(--color-grey-2), 0 2px 0 var(--color-grey-2),
       0 3px 0 var(--color-grey-2), 0 4px 0 var(--color-grey-2),
-      0 20px 0 rgba($color: #000, $alpha: 0.1);
+      0 18px 0 rgba($color: #000, $alpha: 0.1);
 
     animation: float 3s linear infinite alternate;
   }
