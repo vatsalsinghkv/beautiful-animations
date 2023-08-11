@@ -1,0 +1,64 @@
+.loader-pendulum {
+  display: flex;
+  gap: 2.7rem;
+  justify-content: center;
+  min-width: 50%;
+  width: 15rem;
+  border-top: 5px solid var(--color-text);
+
+  &__stick {
+    display: block;
+    position: relative;
+    width: 0.3rem;
+    height: 10rem;
+    background-color: var(--color-text);
+    transform-origin: top;
+
+    &:first-child {
+      animation: swing-left 2s infinite;
+    }
+    &:last-child {
+      animation: swing-right 2s infinite;
+    }
+
+    // ball
+    &::before {
+      content: '';
+      position: absolute;
+      height: 3rem;
+      width: 3rem;
+      border-radius: 50%;
+      background-color: var(--color-text);
+      bottom: 0;
+      transform: translate(calc(-50% + 0.15rem), 50%);
+    }
+  }
+}
+
+@keyframes swing-left {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(60deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes swing-right {
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-60deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
