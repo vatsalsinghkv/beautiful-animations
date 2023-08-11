@@ -1,0 +1,41 @@
+.text-loading {
+  text-transform: uppercase !important;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  &__letter {
+    @for $i from 1 through 7 {
+      &:nth-child(#{$i}) {
+        animation: loading 3s linear infinite;
+        animation-delay: ($i - 1) * 0.2s;
+      }
+    }
+  }
+}
+
+@keyframes loading {
+  0% {
+    color: red;
+    transform: translateX(-20px);
+    letter-spacing: 8px;
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  50% {
+    letter-spacing: -15px;
+    opacity: 1;
+  }
+
+  100% {
+    color: blue;
+    transform: translateX(20px);
+    letter-spacing: 8px;
+    opacity: 0;
+  }
+}
