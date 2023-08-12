@@ -1,0 +1,79 @@
+.loader-dice {
+  transform: rotate(45deg);
+  width: 8rem;
+  height: 8rem;
+  position: relative;
+  animation: breathe 1s linear infinite;
+  &__box {
+    height: 4rem;
+    width: 4rem;
+    background-color: var(--color-text);
+    position: absolute;
+    animation: rotate 1s linear infinite;
+
+    &:nth-child(1) {
+      background-color: var(--color-accent);
+      top: 0;
+      left: 0;
+    }
+
+    &:nth-child(2) {
+      background-color: var(--color-red);
+      top: 0;
+      right: 0;
+    }
+
+    &:nth-child(3) {
+      background-color: var(--color-yellow);
+      left: 0;
+      bottom: 0;
+    }
+
+    &:nth-child(4) {
+      background-color: var(--color-blue);
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+
+@keyframes breathe {
+  0% {
+    width: 8rem;
+    height: 8rem;
+  }
+  10% {
+    width: 8rem;
+    height: 8rem;
+  }
+  50% {
+    width: 11rem;
+    height: 11rem;
+  }
+  90% {
+    width: 8rem;
+    height: 8rem;
+  }
+  100% {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  90% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
