@@ -1,0 +1,70 @@
+.loader-chasing-boxes {
+  height: 10rem;
+  width: 10rem;
+  position: relative;
+
+  &__box {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--color-light);
+    height: 4rem;
+    width: 4rem;
+    border-radius: 5px;
+
+    @for $i from 1 through 3 {
+      &:nth-child(#{$i}) {
+        animation: chase 2s linear infinite;
+        animation-delay: ($i - 1) * 0.7s;
+      }
+    }
+  }
+}
+
+@keyframes chase {
+  0% {
+    left: 0;
+    top: 0;
+  }
+
+  12.5% {
+    left: 50%;
+    top: 0;
+  }
+
+  25% {
+    left: 50%;
+    top: 0;
+  }
+
+  37.5% {
+    left: 50%;
+    top: 50%;
+  }
+
+  50% {
+    left: 50%;
+    top: 50%;
+  }
+
+  62.5% {
+    left: 0;
+    top: 50%;
+  }
+
+  75% {
+    left: 0;
+    top: 50%;
+  }
+
+  87.5% {
+    left: 0;
+    top: 0;
+  }
+
+  100% {
+    left: 0;
+    top: 0;
+  }
+}

@@ -17,6 +17,10 @@
     background-color: #312f2f;
     color: var(--color-light);
   }
+  &--red {
+    background-color: var(--color-red);
+    color: var(--color-light);
+  }
 
   h1,
   h2,
