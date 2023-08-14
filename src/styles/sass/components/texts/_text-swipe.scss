@@ -1,0 +1,34 @@
+.text-swipe {
+  text-transform: uppercase !important;
+  font-weight: 500;
+  letter-spacing: 5px;
+  position: relative;
+  width: auto !important;
+  color: #737373;
+
+  &::before {
+    content: attr(data-text);
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    color: var(--color-yellow);
+    border-right: 3px solid var(--color-yellow);
+    animation: swipe 4s infinite linear;
+  }
+}
+
+@keyframes swipe {
+  0% {
+    width: 0%;
+  }
+
+  50% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0%;
+  }
+}
