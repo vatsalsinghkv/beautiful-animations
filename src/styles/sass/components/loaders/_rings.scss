@@ -1,0 +1,48 @@
+.loader-rings {
+  width: 17rem;
+  height: 17rem;
+  position: relative;
+
+  &__outer {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border-left: 5px solid var(--color-red);
+    border-right: 5px solid var(--color-red);
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    animation: spin 1s linear infinite;
+  }
+
+  &__middle {
+    position: absolute;
+    inset: 15%;
+    border-radius: 50%;
+    border-left: 5px solid var(--color-accent);
+    border-right: 5px solid var(--color-accent);
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    animation: spin 1s linear infinite reverse;
+  }
+
+  &__inner {
+    position: absolute;
+    inset: 30%;
+    border-radius: 50%;
+    border-left: 5px solid var(--color-blue);
+    border-right: 5px solid var(--color-blue);
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    animation: spin 1s linear infinite;
+  }
+
+  &__dot {
+    position: absolute;
+    inset: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-light);
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+  }
+}
