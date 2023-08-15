@@ -1,0 +1,33 @@
+.loader-music {
+  display: flex;
+  gap: 2px;
+  width: 7rem;
+
+  &__bar {
+    display: block;
+    height: 6rem;
+    width: 1rem;
+    background-color: var(--color-yellow);
+    animation: scale 0.8s ease-in-out infinite;
+
+    @for $i from 1 through 6 {
+      &:nth-child(#{$i}) {
+        background-color: var(--color-grad-#{$i});
+        animation-delay: ($i - 1) * 0.1s;
+      }
+    }
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scaleY(0.1);
+  }
+  35% {
+    transform: scaleY(1);
+  }
+  60%,
+  100% {
+    transform: scaleY(0.1);
+  }
+}
