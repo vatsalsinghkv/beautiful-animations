@@ -1,0 +1,37 @@
+.loader-pulse {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: relative;
+  background-color: var(--color-green);
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    inset: -2rem;
+    border-radius: inherit;
+    background-color: inherit;
+    // border: 1px solid var(--color-green);
+    animation: pulse 1.5s linear infinite;
+  }
+
+  &::after {
+    animation-delay: 0.5s;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 0.4;
+    // transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.4);
+  }
+}
