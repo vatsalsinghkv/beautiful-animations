@@ -1,0 +1,27 @@
+.loader-heart-beat {
+  height: 7rem;
+  width: 7rem;
+
+  animation: beat 1.4s infinite linear;
+}
+
+@keyframes beat {
+  0% {
+    transform: rotate(45deg) scale(1);
+  }
+  25% {
+    transform: rotate(45deg) scale(1);
+  }
+  30% {
+    transform: rotate(45deg) scale(1.4);
+  }
+  50% {
+    transform: rotate(45deg) scale(1.2);
+  }
+  70% {
+    transform: rotate(45deg) scale(1.4);
+  }
+  100% {
+    transform: rotate(45deg) scale(1);
+  }
+}

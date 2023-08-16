@@ -28,3 +28,26 @@
     transform: rotate(-60deg);
   }
 }
+
+.heart {
+  background-color: var(--color-red);
+  position: relative;
+  transform: rotate(45deg);
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: inherit;
+    border-radius: 50%;
+  }
+
+  &::before {
+    transform: translateY(-50%);
+  }
+
+  &::after {
+    transform: translateX(-50%);
+  }
+}
