@@ -1,5 +1,5 @@
 .text-lighting {
-  color: #636363;
+  color: var(--color-grey-2);
   text-transform: uppercase !important;
   font-weight: 500;
 
@@ -15,15 +15,15 @@
 
 @keyframes lighting {
   0% {
-    color: #636363;
+    color: var(--color-grey-2);
     text-shadow: none;
   }
   90% {
-    color: #636363;
+    color: var(--color-grey-2);
     text-shadow: none;
   }
   100% {
-    color: #fff900;
-    text-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
+    color: var(--color-yellow);
+    text-shadow: 0 0 7px var(--color-yellow), 0 0 50px var(--color-orange);
   }
 }
