@@ -1,0 +1,29 @@
+.bg-driving {
+  background: url('/images/streets/bg.jpg') no-repeat;
+  background-size: cover;
+  animation: driving 15s infinite linear;
+  position: relative;
+
+  &__car {
+    position: absolute;
+    bottom: -8px;
+    left: 40%;
+    width: 80px;
+  }
+
+  &__bike {
+    position: absolute;
+    bottom: 5px;
+    left: 10%;
+    width: 50px;
+  }
+}
+
+@keyframes driving {
+  0% {
+    background-position-x: left;
+  }
+  100% {
+    background-position-x: right;
+  }
+}
