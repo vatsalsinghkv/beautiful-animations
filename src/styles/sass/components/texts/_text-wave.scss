@@ -1,0 +1,65 @@
+.text-wave {
+  text-transform: uppercase !important;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 9rem;
+  position: relative;
+  width: auto !important;
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--color-blue);
+  line-height: 8rem;
+
+  &::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--color-blue);
+    animation: wave 2s ease-in-out infinite;
+  }
+}
+
+@keyframes wave {
+  0% {
+    clip-path: polygon(
+      0 19%,
+      15% 22%,
+      30% 32%,
+      43% 45%,
+      59% 57%,
+      71% 64%,
+      85% 62%,
+      100% 49%,
+      100% 100%,
+      0 100%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      0 38%,
+      11% 52%,
+      25% 61%,
+      42% 55%,
+      54% 41%,
+      67% 27%,
+      81% 18%,
+      100% 10%,
+      100% 100%,
+      0 100%
+    );
+  }
+  100% {
+    clip-path: polygon(
+      0 19%,
+      15% 22%,
+      30% 32%,
+      43% 45%,
+      59% 57%,
+      71% 64%,
+      85% 62%,
+      100% 49%,
+      100% 100%,
+      0 100%
+    );
+  }
+}
