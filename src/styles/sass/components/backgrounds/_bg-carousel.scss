@@ -1,0 +1,25 @@
+.bg-carousel {
+  animation: carousel infinite linear 20s;
+  background-size: cover;
+}
+
+@keyframes carousel {
+  0% {
+    background-image: url('https://source.unsplash.com/random/600x400?space,night,batman');
+  }
+  20% {
+    background-image: url('https://source.unsplash.com/random/600x400?water,sea,underwater');
+  }
+  40% {
+    background-image: url('https://source.unsplash.com/random/600x400?sun,sunrise,sunset,warm');
+  }
+  60% {
+    background-image: url('https://source.unsplash.com/random/600x400?winter,snow,cold,freezing');
+  }
+  80% {
+    background-image: url('https://source.unsplash.com/random/600x400?city,buildings,newyork');
+  }
+  100% {
+    background-image: url('https://source.unsplash.com/random/600x400?nature,trees,forests');
+  }
+}
