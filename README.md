@@ -66,6 +66,14 @@
 - devChallenges - [@vatsalsinghkv](https://devchallenges.io/portfolio/vatsalsinghkv)
 - Frontend Mentor - [@vatsalsinghkv](https://www.frontendmentor.io/profile/vatsalsinghkv)
 
+## Contributors
+
+<a href="https://github.com/Prakash-Ravichandran/beautiful-animations/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Prakash-Ravichandran/beautiful-animations" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
+
 ## Acknowledgements
 
 - [https://tailwindcss.com/docs/customizing-colors](https://tailwindcss.com/docs/customizing-colors) - Color Inspiration
