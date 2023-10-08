@@ -2,16 +2,6 @@
   &__text {
     width: 95%;
     margin: 0 auto;
-    color: var(--color-accent);
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 50px;
-    line-height: 60px;
-    letter-spacing: 5px;
-    text-shadow: 0 1px 0 var(--color-grey-2), 0 2px 0 var(--color-grey-2),
-      0 3px 0 var(--color-grey-2), 0 4px 0 var(--color-grey-2),
-      0 18px 0 rgba($color: #000, $alpha: 0.1);
-
     animation: float 3s linear infinite alternate;
   }
 }
