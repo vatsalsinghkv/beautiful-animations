@@ -2,7 +2,6 @@
 .save-btn {
   width: 7em;
   height: 7em;
-
   background: #444;
   background: linear-gradient(top, #555, #333);
   border: none;
@@ -14,9 +13,10 @@
   transform-origin: 50% 5em;
 }
 
-.save-btn {
+.wiggle {
   animation: wiggle 2s linear infinite;
 }
+
 @keyframes wiggle {
   0%,
   7% {
