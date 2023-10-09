@@ -1,13 +1,13 @@
 .bg-rain {
-  background-image: url('/images/bg-1.jpeg');
+  background-image: url("/images/bg-1.jpeg");
   background-size: cover;
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     inset: 0;
-    background-image: url('/images/rain.png');
+    background-image: url("/images/rain.png");
     background-size: cover;
     animation: rain 1s linear infinite;
   }

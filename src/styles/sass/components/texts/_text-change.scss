@@ -1,6 +1,6 @@
 .text-change {
   &__title::before {
-    content: 'Batman';
+    content: "Batman";
     text-transform: uppercase;
     color: var(--color-blue);
     animation: word-switch 5s linear infinite;
@@ -9,14 +9,14 @@
 
 @keyframes word-switch {
   0% {
-    content: 'Batman';
+    content: "Batman";
   }
 
   50% {
-    content: 'Ryan Gosling';
+    content: "Ryan Gosling";
   }
 
   100% {
-    content: 'Tyler Durden';
+    content: "Tyler Durden";
   }
 }
