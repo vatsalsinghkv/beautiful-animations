@@ -24,6 +24,8 @@
   }
   100% {
     color: var(--color-yellow);
-    text-shadow: 0 0 7px var(--color-yellow), 0 0 50px var(--color-orange);
+    text-shadow:
+      0 0 7px var(--color-yellow),
+      0 0 50px var(--color-orange);
   }
 }
